@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    font-family: New Century Schoolbook, TeX Gyre Schola, sans-serif;
+    color: #0c254a;
+}
+
+.header {
+    grid-column-start: 1;
+    grid-column-end: 9;
+    background: rgba(256, 256, 256, 0.1);
+}
+
+#forecastLogo {
+    position:absolute;
+    display: block;
+    top: 15px;
+    left: 50px;
+    font-size: 1.6rem;
+}
+
+
+.input {
+    position: absolute;
+    display: block;
+    right: 10px;
+    top: 15px;
+    height: 30px;
+    width: 295px;
+    border-radius: 30px;
+    padding-left: 15px;
+    font-size: 15px;
+    outline: none;
+    border: none;
+    background: rgba(12, 37, 74, 0.2);
+    color: rgba(256, 256, 256, 0.8);
+
+}
+
+.input:hover {
+    background: rgba(4, 19, 41, 0.2);
+}
+
+.input:focus {
+    background: rgba(4, 19, 41, 0.2);
+    border: 1px solid rgba(2, 11, 24, 0.2);
+}
+
+::placeholder {
+    color: white;
+    opacity: 0.4;
+} 
+
+.match-list {
+    position: absolute;
+    display: block;
+    right: 10px;
+    top: 55px;
+    width: 300px;
+    border-radius: 15px;
+    margin-right: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+ul {
+    padding-left: 10px;
+    padding-top: 8px;
+    border-radius: 15px;
+    background: rgba(256, 256, 256, 0.5);
+    list-style:none;
+}
+
+li {
+    padding-bottom: 5px;
+}
+
+li:hover {
+    color: rgba(256, 256, 256, 0.8);
+    cursor: pointer;
+}
+
+.button {
+    position: absolute;
+    right: 10px;
+    width: 40px;
+    top: 15px;
+    height: 32px;
+    border-radius: 44%;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    background: rgba(12, 37, 74, 0.2);
+    cursor:pointer;
+} 
+
+.button i {
+    color: white;
+    opacity: 0.4;
+}
+
+.hamburger-button {
+    display: none;
+}
+
+@media screen and (min-width: 2300px) {
+    .grid-container {
+        grid-template-rows: 120px repeat(5, 1fr);
+    }
+    #forecastLogo {
+        top: 30px;
+        left: 75px;
+        font-size: 2.5rem;
+    }
+    .input {
+        right: 75px;
+        top: 20px;
+        height: 60px;
+        width: 500px;
+        font-size: 1.8rem;
+    }
+    .button {
+        right: 75px;
+        width: 80px;
+        top: 20px;
+        height: 60px;
+        font-size: 2rem;
+    } 
+    .match-list {
+        right: 78px;
+        top: 90px;
+        width: 400px;
+    }
+    li {
+        padding-bottom: 10px;
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #forecastLogo {
+        left: 15px;
+        font-size: 1.3rem;
+    }
+    .input, .button {
+        display: none;
+    }
+    .hamburger-button {
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 15px; 
+        background: rgba(256, 256, 256, 0.1);
+        border: none;
+        height: 1.5rem;
+        width: 2.5rem;
+        border-radius: 5px;
+    }
+
+    .hamburger-button:hover {
+        cursor: pointer;
+    }
+    
+    .search2 {
+        width: 90vw;
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .input2 {
+        height: 30px;
+        width: 295px;
+        font-size: 16px;
+        border: none;
+        background: rgba(12, 37, 74, 0.5);
+        color: rgba(256, 256, 256, 0.8);
+    }
+    .input2:focus {
+        background: rgba(4, 19, 41, 0.5);
+        border: 1px solid rgba(2, 11, 24, 0.2);
+    }
+    .button2 {
+        width: 40px;
+        height: 32px;
+        font-size: 1rem;
+        background: rgba(12, 37, 74, 0.5);
+        border: 0.5px solid rgba(2, 10, 20, 0.5);
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+
+    }
+    
+    .button2:hover {
+        cursor: pointer;
+    }
+
+    .back-button {
+        top: 75px;
+        left: 5px;
+        height: 32px;
+        width: 40px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        background: rgba(12, 37, 74, 0.5);
+        border: 0.5px solid rgba(2, 10, 20, 0.5);
+        font-size: 1rem;
+    }
+    .back-button:hover {
+        cursor: pointer;
+    }
+    
+    
+}

@@ -1,0 +1,88 @@
+/* Stylesheet of the Forecast Section */
+.forecastInfo {
+    grid-row-start: 5;
+    grid-row-end: 7;
+    grid-column-start: 1;
+    grid-column-end: 9;
+    display: flex;
+    justify-content:space-evenly;
+    text-align: center;
+}
+
+.forecast {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    font-size: 1.5rem;
+    font-weight:normal;
+    opacity: 0.8;
+}
+
+.day, .temp, .text, .capitalize {
+    padding: 0.2rem;
+    text-transform: capitalize;
+}
+
+
+@media screen and (max-width: 768px) {
+    .forecastInfo {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 5;
+        grid-column-end: 6;
+        display: grid;
+        grid-template-columns: 3;
+        grid-template-rows: 2;
+        grid-gap: 0px;
+    }
+
+    .forecast {
+        font-size: 0.9rem;
+    }
+
+    #day1 {
+        grid-row: 1;
+        grid-column: 1;
+    }
+
+    #day2 {
+        grid-row: 1;
+        grid-column: 2;
+    }
+
+    #day3 {
+        grid-row: 1;
+        grid-column: 3;
+    }
+
+    #day4 {
+        grid-row: 2;
+        grid-column: 1;
+    }
+
+    #day5 {
+        grid-row: 2;
+        grid-column: 2;
+    }
+
+    #day6 {
+        grid-row: 2;
+        grid-column: 3;
+    }
+}
+
+@media (max-width:1440px) and (min-width:630px) {
+    .forecast {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 2300px) {
+    .forecast {
+        font-size: 2rem;
+        font-weight: normal;
+        opacity: unset;
+    }
+}
+
