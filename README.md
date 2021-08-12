@@ -8,4 +8,4 @@ API used: [OpenWeatherMap](https://openweathermap.org/api)
   - JavaScript
   - HTML
   - CSS
-  - Bootstrap 4
+  - Bootstrap 5
